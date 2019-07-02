@@ -118,7 +118,7 @@ void myDisplay()
     glPopMatrix();
 
     //glTranslated lEFT to RIGHT GOMBUJ;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-\
+
     glColor3f(1.f,0.745f,0.71f);
      glPushMatrix();
      glTranslated(31.5,0,0);
