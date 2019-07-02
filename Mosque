@@ -1,0 +1,528 @@
+
+#include<windows.h>
+#ifdef __APPLE__
+//#include <GLUT/glut.h>
+#else
+#include <GL/glut.h>
+#endif
+
+#include <stdlib.h>
+
+void init()
+{
+    glClearColor(0.0f,0.0f,0.0f,1.0f);
+    glOrtho(-3,40,-25,65,-3,3);
+}
+
+void myDisplay()
+{
+    //siri>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    glClear(GL_COLOR_BUFFER_BIT);
+    glColor3f(1.698f,0.745f,0.71f);
+    glBegin(GL_QUADS);
+       glVertex2f(37,2);
+       glVertex2f(37,0);
+       glVertex2f(0,0);
+       glVertex2f(0,2);
+    glEnd();
+
+    glColor3f(0.698f,1.745f,0.71f);
+    glBegin(GL_QUADS);
+       glVertex2f(36.5,4);
+       glVertex2f(36.5,2);
+       glVertex2f(.5,2);
+       glVertex2f(.5,4);
+    glEnd();
+
+    glColor3f(0.698f,0.745f,1.71f);
+    glBegin(GL_QUADS);
+       glVertex2f(36,6);
+       glVertex2f(36,4);
+       glVertex2f(1,4);
+       glVertex2f(1,6);
+    glEnd();
+
+    //END SIRI
+
+     //lEFT GOMBUZ>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+     glColor3f(1.f,0.745f,0.71f);
+     glPushMatrix();
+     glBegin(GL_QUADS);
+       glVertex2f(4,40);
+       glVertex2f(4,6);
+       glVertex2f(1.5,6);
+       glVertex2f(1.5,40);
+    glEnd();
+
+    //for LINE
+    /*glColor3f(1.0f,0.0f,0.0f);
+    glBegin(GL_LINES);
+        glVertex2f(4,40);
+        glVertex2f(1.5,30);
+    glEnd(); */
+
+    glPushMatrix();
+    glColor3f(1.f,0.745f,0.71f);
+    glBegin(GL_QUADS);
+       glVertex2f(1.7,45);
+       glVertex2f(1.7,40);
+       glVertex2f(1.5,40);
+       glVertex2f(1.5,45);
+
+    glEnd();
+
+
+    glColor3f(1.f,0.745f,0.71f);
+    glBegin(GL_QUADS);
+       glVertex2f(2.3,45);
+       glVertex2f(2.3,40);
+       glVertex2f(2.2,40);
+       glVertex2f(2.2,45);
+
+    glEnd();
+
+    glColor3f(1.f,0.745f,0.71f);
+    glBegin(GL_QUADS);
+       glVertex2f(3.3,45);
+       glVertex2f(3.3,40);
+       glVertex2f(3.2,40);
+       glVertex2f(3.2,45);
+
+    glEnd();
+
+    glColor3f(1.f,0.745f,0.71f);
+    glBegin(GL_QUADS);
+       glVertex2f(4,45);
+       glVertex2f(4,40);
+       glVertex2f(3.8,40);
+       glVertex2f(3.8,45);
+
+    glEnd();
+
+    glColor3f(1.f,0.745f,0.71f);
+    glBegin(GL_QUADS);
+       glVertex2f(3.7,47);
+       glVertex2f(4,45);
+       glVertex2f(1.5,45);
+       glVertex2f(1.8,47);
+
+    glEnd();
+
+    glBegin(GL_TRIANGLES);
+       glVertex2f(2.75,48.7);
+       glVertex2f(3.7,47);
+       glVertex2f(1.8,47);
+
+    glEnd();
+
+    glPopMatrix();
+
+    //glTranslated lEFT to RIGHT GOMBUJ;>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+\
+    glColor3f(1.f,0.745f,0.71f);
+     glPushMatrix();
+     glTranslated(31.5,0,0);
+    glBegin(GL_QUADS);
+       glVertex2f(4,40);
+       glVertex2f(4,6);
+       glVertex2f(1.5,6);
+       glVertex2f(1.5,40);
+    glEnd();
+    glColor3f(1.f,0.745f,0.71f);
+    glBegin(GL_QUADS);
+       glVertex2f(1.7,45);
+       glVertex2f(1.7,40);
+       glVertex2f(1.5,40);
+       glVertex2f(1.5,45);
+
+    glEnd();
+
+
+    glColor3f(1.f,0.745f,0.71f);
+    glBegin(GL_QUADS);
+       glVertex2f(2.3,45);
+       glVertex2f(2.3,40);
+       glVertex2f(2.2,40);
+       glVertex2f(2.2,45);
+
+    glEnd();
+
+    glColor3f(1.f,0.745f,0.71f);
+    glBegin(GL_QUADS);
+       glVertex2f(3.3,45);
+       glVertex2f(3.3,40);
+       glVertex2f(3.2,40);
+       glVertex2f(3.2,45);
+
+    glEnd();
+
+    glColor3f(1.f,0.745f,0.71f);
+    glBegin(GL_QUADS);
+       glVertex2f(4,45);
+       glVertex2f(4,40);
+       glVertex2f(3.8,40);
+       glVertex2f(3.8,45);
+
+    glEnd();
+
+    glColor3f(1.f,0.745f,0.71f);
+    glBegin(GL_QUADS);
+       glVertex2f(3.7,47);
+       glVertex2f(4,45);
+       glVertex2f(1.5,45);
+       glVertex2f(1.8,47);
+
+    glEnd();
+
+    glBegin(GL_TRIANGLES);
+       glVertex2f(2.75,48.7);
+       glVertex2f(3.7,47);
+       glVertex2f(1.8,47);
+
+    glEnd();
+
+  glPopMatrix();
+
+  //END GOMBUZ LEFT AND RIGHT
+
+
+    //BODY white>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+     glColor3f(1.0f,1.0f,1.0f);
+    glBegin(GL_QUADS);
+       glVertex2f(33,36);
+       glVertex2f(33,6);
+       glVertex2f(4,6);
+       glVertex2f(4,36);
+
+    glEnd();
+
+
+
+    //mainDorja gombuj body green>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    glPushMatrix();
+    glColor3f(0.0f,1.0f,0.0f);
+    glBegin(GL_QUADS);
+       glVertex2f(23.5,40);
+       glVertex2f(23.5,6);
+       glVertex2f(13.5,6);
+       glVertex2f(13.5,40);
+
+    glEnd();
+
+    glColor3f(1.0f,1.0f,0.0f);
+    glBegin(GL_QUADS);
+       glVertex2f(23.8,44.5);
+       glVertex2f(23.5,40);
+       glVertex2f(13.5,40);
+       glVertex2f(13.2,44.5);
+
+
+    glEnd();
+
+
+     glPushMatrix();
+    glColor3f(1.0f,1.0f,0.0f);
+    glBegin(GL_QUADS);
+       glVertex2f(24,45.5);
+       glVertex2f(23.5,40);
+       glVertex2f(13.5,40);
+       glVertex2f(13,45.5);
+
+
+    glEnd();
+
+    glColor3f(1.0f,1.0f,0.0f);
+    glBegin(GL_QUADS);
+       glVertex2f(23,50);
+       glVertex2f(24,45.5);
+       glVertex2f(13,45.5);
+       glVertex2f(14,50);
+
+
+    glEnd();
+
+    glColor3f(1.0f,1.0f,0.0f);
+    glBegin(GL_TRIANGLES);
+       glVertex2f(18.5,59);
+       glVertex2f(23,50);
+       glVertex2f(14,50);
+    glEnd();
+    glPopMatrix();
+
+
+     // middle dorja top gombuj tranforom left>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+     glPushMatrix();
+
+     glTranslated(1,18,0);
+     glColor3f(0.0f,1.5f,1.0f);
+    glBegin(GL_QUADS);
+       glVertex2f(12,22.75);
+       glVertex2f(11.75,20);
+       glVertex2f(6.75,20);
+       glVertex2f(6.5,22.75);
+
+
+    glEnd();
+
+    glColor3f(0.0f,1.5f,1.0f);
+    glBegin(GL_QUADS);
+       glVertex2f(11.5,25);
+       glVertex2f(12,22.75);
+       glVertex2f(6.5,22.75);
+       glVertex2f(7,25);
+
+
+    glEnd();
+
+    glColor3f(0.0f,1.5f,1.0f);
+    glBegin(GL_TRIANGLES);
+       glVertex2f(9.25,29.5);
+       glVertex2f(11.5,25);
+       glVertex2f(7,25);
+    glEnd();
+    glPopMatrix();
+
+    //middle dorja top gombuj transform right>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    glPushMatrix();
+
+     glTranslated(17.5,18,0);
+     glColor3f(0.0f,1.5f,1.0f);
+    glBegin(GL_QUADS);
+       glVertex2f(12,22.75);
+       glVertex2f(11.75,20);
+       glVertex2f(6.75,20);
+       glVertex2f(6.5,22.75);
+
+
+    glEnd();
+
+    glColor3f(0.0f,1.5f,1.0f);
+    glBegin(GL_QUADS);
+       glVertex2f(11.5,25);
+       glVertex2f(12,22.75);
+       glVertex2f(6.5,22.75);
+       glVertex2f(7,25);
+
+
+    glEnd();
+
+    glColor3f(0.0f,1.5f,1.0f);
+    glBegin(GL_TRIANGLES);
+       glVertex2f(9.25,29.5);
+       glVertex2f(11.5,25);
+       glVertex2f(7,25);
+    glEnd();
+    glPopMatrix();
+
+
+
+
+
+
+
+
+
+    //middle dorza>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+     glColor3f(1.f,0.0f,1.0f);
+      glPushMatrix();
+
+    glBegin(GL_QUADS);
+       glVertex2f(20.5,23);
+       glVertex2f(20.5,6);
+       glVertex2f(16.5,6);
+       glVertex2f(16.5,23);
+
+    glEnd();
+
+     glColor3f(1.f,0.0f,1.0f);
+    glBegin(GL_TRIANGLES);
+       glVertex2f(18.5,25.3);
+       glVertex2f(20.5,23);
+       glVertex2f(16.5,23);
+    glEnd();
+    glPopMatrix();
+
+
+
+    //middle dorza Transfarend left>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+     glColor3f(1.f,0.0f,1.0f);
+      glPushMatrix();
+     glTranslated(-9.25,0,0);
+    glBegin(GL_QUADS);
+       glVertex2f(20.5,23);
+       glVertex2f(20.5,6);
+       glVertex2f(16.5,6);
+       glVertex2f(16.5,23);
+
+    glEnd();
+
+     glColor3f(1.f,0.0f,1.0f);
+    glBegin(GL_TRIANGLES);
+       glVertex2f(18.5,25.3);
+       glVertex2f(20.5,23);
+       glVertex2f(16.5,23);
+    glEnd();
+    glPopMatrix();
+
+
+
+    //middle dorza Transfarend Right>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+     glColor3f(1.f,0.0f,1.0f);
+      glPushMatrix();
+     glTranslated(9.25,0,0);
+    glBegin(GL_QUADS);
+       glVertex2f(20.5,23);
+       glVertex2f(20.5,6);
+       glVertex2f(16.5,6);
+       glVertex2f(16.5,23);
+
+    glEnd();
+
+     glColor3f(1.f,0.0f,1.0f);
+    glBegin(GL_TRIANGLES);
+       glVertex2f(18.5,25.3);
+       glVertex2f(20.5,23);
+       glVertex2f(16.5,23);
+    glEnd();
+    glPopMatrix();
+
+    //gombuz chad left>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    glColor3f(1.f,0.0f,0.0f);
+      //glPushMatrix();
+     //glTranslated(9.25,0,0);
+    glBegin(GL_QUADS);
+       glVertex2f(13.5,38);
+       glVertex2f(13.5,36);
+       glVertex2f(4,36);
+       glVertex2f(4,38);
+
+    glEnd();
+/*
+    glColor3f(1.f,0.0f,0.0f);
+      //glPushMatrix();
+     //glTranslated(9.25,0,0);
+    glBegin(GL_QUADS);
+       glVertex2f(7.8,38);
+       glVertex2f(7.8,36);
+       glVertex2f(4,36);
+       glVertex2f(4,38);
+
+    glEnd();
+
+     /*glColor3f(1.f,0.0f,0.0f);
+      //glPushMatrix();
+     //glTranslated(9.25,0,0);
+    glBegin(GL_QUADS);
+       glVertex2f(13.5,38);
+       glVertex2f(13.5,36);
+       glVertex2f(12.69,36);
+       glVertex2f(12.69,38);
+
+    glEnd();
+
+    glColor3f(0.0f,1.5f,1.0f);
+    glBegin(GL_QUADS);
+       glVertex2f(12.69,38);
+       glVertex2f(12.69,36);
+       glVertex2f(7.8,36);
+       glVertex2f(7.8,38);
+
+    glEnd(); */
+
+
+//gombuz chad right>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    glColor3f(1.f,0.0f,0.0f);
+      //glPushMatrix();
+     //glTranslated(9.25,0,0);
+    glBegin(GL_QUADS);
+       glVertex2f(33,38);
+       glVertex2f(33,36);
+       glVertex2f(23.5,36);
+       glVertex2f(23.5,38);
+
+    glEnd();
+
+
+    //gambuz chad khuti left transform>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    /*
+    glPushMatrix();
+    glColor3f(1.f,0.745f,0.71f);
+    glTranslated(5,0,0);
+    glBegin(GL_QUADS);
+       glVertex2f(1.7,45);
+       glVertex2f(1.7,40);
+       glVertex2f(1.5,40);
+       glVertex2f(1.5,45);
+
+    glEnd();
+
+
+    glColor3f(1.f,0.745f,0.71f);
+    glBegin(GL_QUADS);
+       glVertex2f(1.5,22.5);
+       glVertex2f(1.15,20);
+       glVertex2f(1.1,20);
+       glVertex2f(1.1,22.5);
+
+    glEnd();
+
+    glColor3f(1.f,0.745f,0.71f);
+    glBegin(GL_QUADS);
+       glVertex2f(1.65,22.5);
+       glVertex2f(1.65,20);
+       glVertex2f(1.6,20);
+       glVertex2f(1.6,22.5);
+
+    glEnd();
+
+    glColor3f(1.f,0.745f,0.71f);
+    glBegin(GL_QUADS);
+       glVertex2f(2,22.5);
+       glVertex2f(2,20);
+       glVertex2f(1.9,20);
+       glVertex2f(1.9,22.5);
+
+    glEnd();
+
+    glColor3f(1.f,0.745f,0.71f);
+    glBegin(GL_QUADS);
+       glVertex2f(1.85,23.5);
+       glVertex2f(2,22.5);
+       glVertex2f(0.75,22.5);
+       glVertex2f(0.9,23.5);
+
+    glEnd();
+
+    glBegin(GL_TRIANGLES);
+       glVertex2f(1.375,24.35);
+       glVertex2f(1.85,23.5);
+       glVertex2f(0.9,23.5);
+
+    glEnd();
+
+    glPopMatrix(); */
+
+
+
+
+
+
+
+    glFlush();
+}
+
+int main()
+{
+    glutInitDisplayMode(GLUT_SINGLE|GLUT_RGB);
+    glutInitWindowSize(900,650);
+    glutInitWindowPosition(400,200);
+    glutCreateWindow("Mosque");
+    init();
+    glutDisplayFunc(myDisplay);
+    glutMainLoop();
+    return 0;
+}
